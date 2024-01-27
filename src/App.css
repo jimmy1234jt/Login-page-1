@@ -1,0 +1,157 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.app {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: #121212; */
+  font-family: 'Poppins', sans-serif;
+  background-image: url('./assets/Cloudy.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.container {
+  position: relative;
+  width: 50vw;
+  max-width: 600px;
+  /* min-width: 400px; */
+  background-color: #98b1e1;
+  border-radius: 10px;
+  /* box-shadow: 5px 5px 10px purple; */
+  margin: 0;
+}
+
+h2 {
+  font-size: 2em;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  padding: 30px 20px 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-family: cursive;
+}
+
+.mid-login {
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.sign-info {
+  display: flex;
+  justify-content: space-around;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+}
+
+::placeholder {
+  color: black;
+}
+
+.form-group input {
+  width: 250px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: black 0.1px solid;
+}
+
+/* .form-group input:hover {
+  background-color: white;
+} */
+
+.form-group label {
+  font-size: 1.2em;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.btn button {
+  font-size: 1.2em;
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: none;
+  font-weight: 400;
+  background-color: #DCEBFE;
+}
+
+/* login success */
+
+/* Add this to your CSS file */
+.form-feedback {
+  position: absolute;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  top: -70px;
+}
+
+.success {
+  color: green;
+  background-color: #d0f0c0;
+}
+
+.error {
+  background-color: white;
+  color: red;
+}
+
+.loading {
+  color: #333;
+  background-color: #f0f0f0;
+}
+
+
+@media (max-width: 1200px) {
+  .container{
+    width: 70vw;
+  }
+}
+@media (max-width: 900px) {
+  .container{
+    width: 80vw;
+  }
+}
+@media (max-width: 700px) {
+  .container{
+    width: 100vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .sign-info, .mid-login{
+    flex-direction: column;
+  }
+  .form-group input {
+    width: 100%;
+  }
+  
+}
